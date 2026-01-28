@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTask Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🚀 DevTask Tracker</h1>
+            <p>Gestor de tareas técnicas para el equipo</p>
+        </header>
+
+        <section class="form-section">
+            <form id="taskForm">
+                <div class="form-group">
+                    <label for="titulo">Título de la tarea</label>
+                    <input type="text" id="titulo" placeholder="Ej: Corregir bug en Login" required>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="tecnologia">Tecnología</label>
+                        <select id="tecnologia">
+                            <option value="JS">JavaScript</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="PHP">PHP</option>
+                        </select>
+                    </div>
+                    </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" rows="3" placeholder="Detalles técnicos..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-save">Guardar Tarea</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Tareas Pendientes</h2>
+            <div id="tasksContainer" class="grid-container">
+                <p class="loading">Cargando tareas...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
