@@ -2,6 +2,7 @@
 
 El proyecto sigue una arquitectura de separación de responsabilidades:
 
+```text
 devtask-tracker/
 ├── backend/            # API RESTful (Node.js + Express + MongoDB)
 │   ├── models/         # Esquemas de datos (Mongoose)
